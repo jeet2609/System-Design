@@ -71,7 +71,7 @@ class HomeTheaterTest {
 }
 
 /*
-    1. Client requires all work to do
+    1. Problem - Client requires all work to do by itself
 */
 
 

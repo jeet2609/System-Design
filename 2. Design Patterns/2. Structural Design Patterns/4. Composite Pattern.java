@@ -5,10 +5,10 @@
 
 // Consider example of File system, where we have files and directories
 
-// 1. Component - An abstract class or interface that declares the commom operation that can be performed on both composite and leaf object.
 import java.util.ArrayList;
 import java.util.List;
 
+// 1. Component - An abstract class or interface that declares the commom operation that can be performed on both composite and leaf object.
 interface FileSystemComponet {
     void showDetails();
 }

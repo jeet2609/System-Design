@@ -16,11 +16,10 @@
     3. Without Flyweight each character will be seperate object, which could use huge memory.
 */
 
-// 1. Flyweight Interface - Declares methods for flyweight object. These methods typically accept extrinsic states to operate on
-
 import java.util.HashMap;
 import java.util.Map;
 
+// 1. Flyweight Interface - Declares methods for flyweight object. These methods typically accept extrinsic states to operate on
 interface CharacterFlyweight {
     void display(String font, int fontSize, String color);
 }
