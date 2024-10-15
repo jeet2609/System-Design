@@ -23,7 +23,7 @@ class UserAuthenticator {
     } 
 }
 
-class EmailSender {
+class EmailNotifier {
     public void sendEmailNotification(String email) {
         // Email sending logic
     }
