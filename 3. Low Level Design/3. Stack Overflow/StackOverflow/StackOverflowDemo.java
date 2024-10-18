@@ -28,8 +28,11 @@ public class StackOverflowDemo {
 		system.acceptAnswer(bobAnswer);
 
         // Charlie votes on the question and answer
-        system.voteQuestion(charlie, javaQuestion, 1);  // Upvote
-        system.voteAnswer(charlie, bobAnswer, 1);   // Upvote
+        system.vote(charlie, javaQuestion, 1);	// Upvote
+        system.vote(charlie, bobAnswer, 1);		// Upvote
+
+		// Alice votes on answer
+		system.vote(alice, bobAnswer, 1);	// Upvote
 
 		// Bob asks another question
         Question pythonQuestion = system.askQuestion(bob, "How to use list comprehensions in Python?",
@@ -40,8 +43,8 @@ public class StackOverflowDemo {
 		Answer aliceAnswer = system.answerQuestion(alice, pythonQuestion, "List comprehensions in Python provide a concise way to create lists...");
 
 		// Charlie votes on Bob's question and Alice's answer
-        system.voteQuestion(charlie, pythonQuestion, 1);  // Upvote
-        system.voteAnswer(charlie, aliceAnswer, 1);  // Upvote
+        system.vote(charlie, pythonQuestion, 1);  // Upvote
+        system.vote(charlie, aliceAnswer, 1);  // Upvote
 
 		// Print out the current state
         System.out.println("Question: " + javaQuestion.getTitle());

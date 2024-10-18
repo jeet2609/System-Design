@@ -27,10 +27,6 @@ public class Answer implements Votable, Commentable {
 
     @Override
     public void vote(User user, int value) {
-        if(value != -1 && value != 1) {
-            throw new IllegalArgumentException("Vote value must be either 1 or -1");
-        }
-
         votes.removeIf(v -> v.getUser().equals(user));
         votes.add(new Vote(user, value));
         author.updateReputation(value * 10);    // +10 for upvote, -10 for downvote

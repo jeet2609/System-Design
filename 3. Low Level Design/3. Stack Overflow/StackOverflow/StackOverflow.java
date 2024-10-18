@@ -53,12 +53,8 @@ public class StackOverflow {
         return user.addComment(commentable, content);
     }
 
-    public void voteQuestion(User user, Question question, int value) {
-        question.vote(user, value);
-    }
-
-    public void voteAnswer(User user, Answer answer, int value) {
-        answer.vote(user, value);
+    public void vote(User user, Votable votable, int value) {
+        user.addVote(votable, value);
     }
 
     public void acceptAnswer(Answer answer) {

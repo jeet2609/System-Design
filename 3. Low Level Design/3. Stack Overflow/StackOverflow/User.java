@@ -49,6 +49,14 @@ public class User {
         return comment;
     }
 
+    public void addVote(Votable votable, int value) {
+        if(value != -1 && value != 1) {
+            throw new IllegalArgumentException("Vote value must be either 1 or -1");
+        }
+
+        votable.vote(this, value);
+    }
+
     public synchronized void updateReputation(int value) {
         this.reputation += value;
         if(reputation < 0) {
