@@ -57,7 +57,6 @@ public class User {
     }
 
     // Getters
-    // Getters
     public int getId() { return id; }
     public String getUsername() { return userName; }
     public String getEmail() { return email; }
