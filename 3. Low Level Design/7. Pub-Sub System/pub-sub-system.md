@@ -21,7 +21,7 @@ In short, this setup allows efficient message delivery from publishers to subscr
 1. The **`Message`** class represents a message that can be published and received by subscribers. It contains the message content.
 2. The **`Topic`** class represents a topic to which messages can be published. It maintains a set of subscribers and provides methods to add and remove subscribers, as well as publish messages to all subscribers.
 3. The **`Subscriber`** interface defines the contract for subscribers. It declares the onMessage method that is invoked when a subscriber receives a message.
-4. The **`PrintSubscriber`** and **`Logging`** classes are concrete implementation of the Subscriber interface.
+4. The **`PrintSubscriber`** and **`LoggingSubscriber`** classes are concrete implementation of the Subscriber interface.
 5. The **`Publisher`** class represents a publisher that publishes messages to a specific topic.
 6. The **`PubSubSystem`** class is the main class that manages topics, subscribers, and message publishing. It uses a ConcurrentHashMap to store topics.
 7. The **`PubSubSystemDemo`** class demonstrates the usage of the Pub-Sub system by creating topics, subscribers, and publishers, and publishing messages.
