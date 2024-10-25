@@ -1,10 +1,9 @@
 # Designing a Pub-Sub System
 
 A Pub-Sub (Publisher-Subscriber) system is a messaging framework where publishers send messages to specific topics, and subscribers receive these messages if they’re subscribed to those topics. Here’s how it works in simpler terms:
-
-	1.	Publishers create and send out messages to a named topic (like a channel or category).
-	2.	Subscribers who are interested in that topic get notified and receive the messages in real time.
-	3.	Multiple publishers and subscribers can exist, and each subscriber receives all messages published to the topics they’re subscribed to.
+1.	Publishers create and send out messages to a named topic (like a channel or category).
+2.	Subscribers who are interested in that topic get notified and receive the messages in real time.
+3.	Multiple publishers and subscribers can exist, and each subscriber receives all messages published to the topics they’re subscribed to.
 
 In this system, concurrent access (when multiple publishers or subscribers are active at once) is handled securely to ensure data consistency. The system is also designed to be scalable, so more publishers or subscribers can be added without slowing things down.
 
