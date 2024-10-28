@@ -29,7 +29,7 @@ public class TaskManager {
     }
 
     public void deleteTask(String taskId) {
-        Task task = tasks.get(taskId);
+        Task task = tasks.remove(taskId);
         if(task != null) {
             unAssignedTaskFromUser(task.getAssignedUser(), task);
         }

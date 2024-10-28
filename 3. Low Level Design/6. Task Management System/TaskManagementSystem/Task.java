@@ -35,7 +35,7 @@ public class Task {
     public void setDescription(String description) { this.description = description; }
     public void setDueDate(Date dueDate) { this.dueDate = dueDate; }
     public void setPriority(Priority priority) { this.priority = priority; }
-    public void setStatus(TaskStatus status) { this.status = TaskStatus.PENDING; }
+    public void setStatus(TaskStatus status) { this.status = status; }
 
     @Override
     public String toString() {
