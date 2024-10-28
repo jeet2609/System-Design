@@ -81,4 +81,7 @@ public class Board {
         
         System.out.println();
     }
+
+    // Getters
+    public int getSize() { return size; }
 }

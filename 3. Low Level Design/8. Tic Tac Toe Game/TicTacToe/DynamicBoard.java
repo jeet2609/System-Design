@@ -19,6 +19,13 @@ public class DynamicBoard {
         return instance;
     }
 
+    public static DynamicBoard getInstance() {
+        if(instance == null) {
+            throw new IllegalStateException("Board not initialized. Call getInstance(size) first.");
+        }
+        return instance;
+    }
+
     public void resetBoard() {
         initializeBoard();
     }

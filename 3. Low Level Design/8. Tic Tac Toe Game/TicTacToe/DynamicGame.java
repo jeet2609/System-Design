@@ -70,7 +70,7 @@ public class DynamicGame {
                 scanner.next();
             }
 
-            System.out.println("Invalid input! Please enter a number between 1 and " + board.getSize());
+            System.out.println("Invalid input! Please enter a number between 1 and " + board.getSize() + ".");
         }
     }
 }
