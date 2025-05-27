@@ -77,9 +77,9 @@ public class VendingMachine {
         return selectedProduct;
     }
 
-    void resetSelectedProduct() {
-        selectedProduct = null;
-    }
+    // void resetSelectedProduct() {
+    //     selectedProduct = null;
+    // }
 
     void addCoin(Coin coin) {
         totalPayment += coin.getValue();
